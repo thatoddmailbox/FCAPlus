@@ -241,20 +241,21 @@ def create_patch():
 
 	os.mkdir(patch_dir)
 
+	# add files (so that new files are included in the diff)
+	rc = run_command([ "git", "-C", work_path, "add", "." ])
+	if rc != 0:
+		print("git gave return code %d, stopping!" % rc)
+		sys.exit(1)
+
 	# create a diff
 	with open(os.path.join(patch_dir, "changes.patch"), 'w') as changes:
-		run_command(["git", "-C", work_path, "diff"], stdout=changes)
+		run_command(["git", "-C", work_path, "diff", "--cached", "--binary"], stdout=changes)
 
 	# create a description
 	with open(os.path.join(patch_dir, "desc.txt"), 'w') as desc_file:
 		desc_file.write(desc)
 
 	# commit the changes so they don't get included in a potential second patch
-	rc = run_command([ "git", "-C", work_path, "add", "." ])
-	if rc != 0:
-		print("git gave return code %d, stopping!" % rc)
-		sys.exit(1)
-
 	rc = run_command([ "git", "-C", work_path, "commit", "-m", desc ])
 	if rc != 0:
 		print("git gave return code %d, stopping!" % rc)

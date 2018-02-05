@@ -1,0 +1,24 @@
+diff --git a/apktool.yml b/apktool.yml
+index fa20db3..59406ad 100644
+--- a/apktool.yml
++++ b/apktool.yml
+@@ -1,15 +1,15 @@
+ !!brut.androlib.meta.MetaInfo
+-apkFileName: com.opentext.bluefield.apk
++apkFileName: com.opentext.bluefieldpatch.apk
+ compressionType: false
+ doNotCompress:
+ - arsc
+ isFrameworkApk: false
+ packageInfo:
+   forcedPackageId: '127'
+-  renameManifestPackage: null
++  renameManifestPackage: com.opentext.bluefieldpatch
+ sdkInfo:
+-  minSdkVersion: '7'
+-  targetSdkVersion: '11'
++  minSdkVersion: '21'
++  targetSdkVersion: '21'
+ sharedLibrary: false
+ unknownFiles: {}
+ usesFramework:

@@ -1,0 +1,15 @@
+diff --git a/res/values/strings.xml b/res/values/strings.xml
+index 8350af7..52168f4 100644
+--- a/res/values/strings.xml
++++ b/res/values/strings.xml
+@@ -1,8 +1,8 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <string name="APPLICATION_DESCRIPTION">FirstClass Mobile Client for Android</string>
+-    <string name="APPLICATION_NAME">FirstClass</string>
+-    <string name="APPLICATION_TITLE">FirstClass Mobile Client</string>
++    <string name="APPLICATION_NAME">FirstClass+</string>
++    <string name="APPLICATION_TITLE">FirstClass+ Client</string>
+     <string name="BUTTON_ACCEPT">Accept</string>
+     <string name="BUTTON_CACHE">Clear Cache</string>
+     <string name="BUTTON_CANCEL">Cancel</string>

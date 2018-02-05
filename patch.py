@@ -9,6 +9,11 @@ import sys
 
 from distutils import dir_util
 
+# Fix Python 2.x.
+# from https://stackoverflow.com/questions/954834/how-do-i-use-raw-input-in-python-3
+try: input = raw_input
+except NameError: pass
+
 APK_NAME = "com.opentext.bluefield.apk"
 EXPECTED_SHA256 = "02d8be9dbce2dc41934dd0f76055c613eafaedb96f537538fc55c0d988c98d64"
 EXPECTED_VERSION = ""
@@ -57,7 +62,7 @@ def run_command(command, stdout=None):
 	rc = subprocess.call(command, stdout=stdout, shell=False)
 	return rc
 
-def build():
+def prebuild():
 	# look for the apk and check its validity
 	if not os.path.exists(apk_path):
 		print("Couldn't find APK file %s to patch." % apk_path)
@@ -88,13 +93,6 @@ def build():
 		print("Couldn't find apktool. Make sure you have it installed and located in your PATH.")
 		sys.exit(1)
 
-	# found a valid apk, first clean up existing app data folders
-	if os.path.exists(orig_path):
-		shutil.rmtree(orig_path)
-
-	if os.path.exists(work_path):
-		shutil.rmtree(work_path)
-
 	# create a private/ folder if needed
 	if not os.path.exists(private_path):
 		os.mkdir(private_path)
@@ -110,6 +108,16 @@ def build():
 		if rc != 0:
 			print("keytool gave return code %d, stopping!" % rc)
 			sys.exit(1)
+
+def build():
+	prebuild()
+
+	# found a valid apk, first clean up existing app data folders
+	if os.path.exists(orig_path):
+		shutil.rmtree(orig_path)
+
+	if os.path.exists(work_path):
+		shutil.rmtree(work_path)
 
 	# unpack it into the orig folder
 	print("Decoding original APK with apktool...")
@@ -214,11 +222,51 @@ def install(second_try=False):
 		print("adb gave return code %d, stopping!" % rc)
 		sys.exit(1)
 
+def create_patch():
+	name = input("Enter a name for the new patch directory: ")
+	if name == "":
+		print("Canceled.")
+		sys.exit(1)
+
+	desc = input("Enter a description for the new patch: ")
+	if desc == "":
+		print("Canceled.")
+		sys.exit(1)
+
+	patch_dir = os.path.join(patches_path, name)
+
+	if os.path.exists(patch_dir):
+		print("That patch already exists, stopping...")
+		sys.exit(1)
+
+	os.mkdir(patch_dir)
+
+	# create a diff
+	with open(os.path.join(patch_dir, "changes.patch"), 'w') as changes:
+		run_command(["git", "-C", work_path, "diff"], stdout=changes)
+
+	# create a description
+	with open(os.path.join(patch_dir, "desc.txt"), 'w') as desc_file:
+		desc_file.write(desc)
+
+	# commit the changes so they don't get included in a potential second patch
+	rc = run_command([ "git", "-C", work_path, "add", "." ])
+	if rc != 0:
+		print("git gave return code %d, stopping!" % rc)
+		sys.exit(1)
+
+	rc = run_command([ "git", "-C", work_path, "commit", "-m", desc ])
+	if rc != 0:
+		print("git gave return code %d, stopping!" % rc)
+		sys.exit(1)
+
 def help():
 	print("Usage: python patch.py [action], where action is one of:")
 	print("* build - Build a patched FirstClass APK")
-	print("* diff - Used to create a patch")
+	print("* build_test - Build a patched FirstClass APK based on the current contents of the working directory")
+	print("* create_patch - Used to create a patch")
 	print("* install - Build a patched FirstClass APK, and then use ADB to install it on a connected Android device")
+	print("* install_test - Run build_test, and then use ADB to install the created APK on a connected Android device")
 
 action = "build"
 
@@ -229,12 +277,19 @@ else:
 
 if action == "build":
 	build()
-elif action == "diff":
-	print("diff doesn't work yet")
+elif action == "build_test":
+	prebuild()
+	package_and_sign()
+elif action == "create_patch":
+	create_patch()
 elif action == "help":
 	help()
 elif action == "install":
 	build()
+	install()
+elif action == "install_test":
+	prebuild()
+	package_and_sign()
 	install()
 else:
 	print("Unknown action '%s'!" % action)

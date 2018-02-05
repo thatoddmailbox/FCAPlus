@@ -1,0 +1,269 @@
+diff --git a/res/drawable-hdpi/ic_send_black_24dp.png b/res/drawable-hdpi/ic_send_black_24dp.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..7be098fdeaff304a7a5d9c6b86d43035e540c26c
+GIT binary patch
+literal 250
+zcmV<W00sYvP)<h;3K|Lk000e1NJLTq001Na001Ni1ONa4O9@aD0002NNkl<ZcmeIz
+z!3}~y7)0S`vIR&1Vxra99_U%@0$RZ`wg5cf;g1OuCriBGc;WQ1FF@R}(l!8H=$Y1l
+zCPr@D$>k70=0VF?4$W5sjUO7JFf&v@cBq1Ms0ry%8`7Z~azh1Vga)YM6n-_y2o)b~
+zqK+_?4h@i)I&TR57CHy$@Bv-vmY~Ejo`L;BT2I69PE+?3%XG9n3m^X+W4uQ?MnFc4
+zfb19z=@=i<F%t4(1SDci$cWL9j`{6hw%#9l0h$SPCDI+)8~^|S07*qoM6N<$g3&Qx
+A*8l(j
+
+literal 0
+HcmV?d00001
+
+diff --git a/res/drawable-mdpi/ic_send_black_24dp.png b/res/drawable-mdpi/ic_send_black_24dp.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..83156aa38fc3644b0e394e8ab32ffd916be57ea6
+GIT binary patch
+literal 205
+zcmeAS@N?(olHy`uVBq!ia0vp^5+KaM0wlfaz7_+iDV{ElAr*{AFC64;au8^Jc)x{d
+z34`IqzU!xNG2J*3#JR13-PXrP?PIHr{;wUMCeFY4@o62al(<`%yiH@P_SB=S8>dRQ
+zK5M=q(`cu_zDt4imIFK63(KYH3obV@+FduCV1MDc18-l-2K56jiFN98FLSd`3|V>S
+z?tHx-n>Cx=T1v0UY~*!mVKYjSe!;<;VdccU@qd$eaj2Ul1NWh4K=(0ty85}Sb4q9e
+E0Nig(TmS$7
+
+literal 0
+HcmV?d00001
+
+diff --git a/res/drawable-xhdpi/ic_send_black_24dp.png b/res/drawable-xhdpi/ic_send_black_24dp.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..fd36be8b96d80ceb9336bb2acebfdd42ca6f3cdc
+GIT binary patch
+literal 333
+zcmV-T0kZyyP)<h;3K|Lk000e1NJLTq001xm001xu1ONa4{R=S+0003LNkl<ZcmeH}
+zF*3$b6otQn^eWP_1V*A~2{fT)33Nim5~xx5m+-3@h9%HSMU9bXQoP2P$(57ay>k}u
+zz4yJ$&1J--q};JXhGV`7G#rzA0=j;3#hM==_F;TsE#X%ij>tU$QCR5&(1qCnQP=`P
+zf}xVIU~Uv90(4;lAPT#r6aj|bvrVQ0bYaY~%qIJsG3A-BLBa~mnPHK2b~)jiN8WT{
+zW8UwTx=)yXzmHCs0$5^$Jx-bM#QUFs3s(Q9XoW2fIOm3!UPXt@3uo+k<ceASjA4kB
+zAk^~R2&1C%7!^@UfjPPq9iWW^aiHlxeR;yPf)oK@kfN-PHM!sNYnNgL7<L5>AnntJ
+f+zL`$lalfSE(3Y*vbZRd00000NkvXXu0mjf@9dA^
+
+literal 0
+HcmV?d00001
+
+diff --git a/res/drawable-xxhdpi/ic_send_black_24dp.png b/res/drawable-xxhdpi/ic_send_black_24dp.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..40b74ebc16e0bf2a85ebc3d920353fc4eb8337aa
+GIT binary patch
+literal 412
+zcmV;N0b~A&P)<h;3K|Lk000e1NJLTq002k;002k`1ONa4|Kxkj0004FNkl<ZcmeI$
+zKQ2U397pj}@Ol-mWeLR4vjiHnEP>9SiX~8^U<uSCBP@Z|tEiFtMijS_kefNr+~S_Q
+zfp31Fh{@x(N~Kb%bjKDI85J1Pa73Ncpzrs=CCm8?itk<n6b8lDa7dlgpa{6cSZaUH
+z@d2$tKA<qj0u%-bfWn}$115|S0JT9rpg$-A&g3&F0$#X)L*)(Fq{1I00J?)5Kyi=>
+zs0^|Jg+V%CkHn^!XN_G>x#5Y=+yEz-Wrb~yx#EG>?g9P#`GEfYY{2gC_rie#Xx{HV
+z9WZ^+9INbb!ZnY){W<8IMW1Yeb@n*pmggk0eWts)LHZl8!Q?;PKtK|1ApBhkH%LaR
+z+<&eDk~K&`G6xAr>G?=KM#@GSITuODMG{hxgxp`sLh?^hp*9(*rqfy<$sZ&l`GXn{
+zN%(M{j3g9PB%z=p2?Z5ND5xJVg@XEhUa0RPl}e>jN$3j$I+7_=g2%A{0000<MNUMn
+GLSTZT8?*NS
+
+literal 0
+HcmV?d00001
+
+diff --git a/res/drawable-xxxhdpi/ic_send_black_24dp.png b/res/drawable-xxxhdpi/ic_send_black_24dp.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..761929f4319ed27f6d1f995d09eb2b9bc2de316a
+GIT binary patch
+literal 543
+zcmV+)0^t3LP)<h;3K|Lk000e1NJLTq003YB003YJ1ONa4NRhv@0005zNkl<ZcmeI2
+zJx*Ie6h=>x*fkZ{B`g7i!8I&_G+^jp3D98-1uOyT{3%&NQbJ*DmH;h=0&4#;NKAvc
+zngWD8@00GiD>ySpPfw%ED;&ph9LI5-3$`dDOrO9#M^uFcUS_~=>dFFfx_Utk2yf<&
+zL#na@CMZ#XI2|@AiwWojH6)m^LH(kxEMS9@5fBJ!L`Y6LsAWk36I4l8AWn}K6=i`!
+z1T`jn!d%jzq%2^A5)_C*{hV}APXs$kL0JK@psavcP*y-Js4$V~aX>{+zy`G>DPV)r
+z6R<(eC=1x2@(bh(YKnQ**yWUeTr*S;>I<{1u+1@l=<+bZpnjx+Qo5fu8;PKF?k63T
+z&i%xoY9x@kpL9@4_j5}#5tPvV^kY!@1?E^~hZFvC#pAmKzO$Gop#{FN#~J^*`EWw}
+zOc(o%)6-_1uf;#(bTk5Ioc`_<{*2Snl!|`F>1b;C&p1moA>Y{Fg$x4uf7pUlG#0UF
+zEGp6De_Cu(k$v1X(Z~qcw}$)z`QM|BfL1h?v05}nKrI?0pcRc}l>M1JgMf)fQJ_OZ
+zb=@XLBfE0eiqR+um}v9_;>v*7;;V^9Nx(!SBw#n;^aNrwGW6B<)s28&G*%#PM2m8+
+h5{=_Hj^j9v^9)ES=TShce4YRR002ovPDHLkV1nL{>pK7d
+
+literal 0
+HcmV?d00001
+
+diff --git a/res/layout/post_message_screen.xml b/res/layout/post_message_screen.xml
+index dab15bc..3ca956f 100644
+--- a/res/layout/post_message_screen.xml
++++ b/res/layout/post_message_screen.xml
+@@ -32,7 +32,7 @@
+                 <EditText android:id="@id/msg_subject" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+             </LinearLayout>
+             <EditText android:id="@id/msg_body" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/TEXT_MESSAGE_BODY" android:inputType="textMultiLine" />
+-            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BUTTON_SEND" />
++            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BUTTON_SEND" android:visibility="gone" />
+         </LinearLayout>
+     </ScrollView>
+ </LinearLayout>
+\ No newline at end of file
+diff --git a/res/menu/menu_options.xml b/res/menu/menu_options.xml
+index 1fb016e..f577cef 100644
+--- a/res/menu/menu_options.xml
++++ b/res/menu/menu_options.xml
+@@ -2,6 +2,10 @@
+ <menu
+   xmlns:android="http://schemas.android.com/apk/res/android">
+     <group android:id="@id/ALL_ITEMS">
++        <!-- added menu items start -->
++        <item android:icon="@drawable/ic_send_black_24dp" android:id="@id/MC_SEND" android:title="@string/BUTTON_SEND" android:showAsAction="always" />
++        <!-- added menu items end -->
++
+         <item android:icon="@android:drawable/ic_menu_delete" android:id="@id/MC_EMPTY_OUTBOX" android:title="@string/MENU_EMPTY_OUTBOX" />
+         <item android:icon="@drawable/ic_menu_attachment" android:id="@id/MC_ADD_ATTACHMENT" android:title="@string/MENU_ADD_ATTACHMENT" />
+         <item android:icon="@drawable/ic_menu_markread" android:id="@id/MC_MARK_READ" android:title="@string/MENU_MARK_READ" />
+diff --git a/res/values/ids.xml b/res/values/ids.xml
+index ccec5de..18ede66 100644
+--- a/res/values/ids.xml
++++ b/res/values/ids.xml
+@@ -179,4 +179,8 @@
+     <item type="id" name="MC_ABOUT">false</item>
+     <item type="id" name="MC_HELP">false</item>
+     <item type="id" name="MC_EXIT">false</item>
++
++    <!-- added menu items start -->
++    <item type="id" name="MC_SEND">false</item>
++    <!-- added menu items end -->
+ </resources>
+diff --git a/res/values/public.xml b/res/values/public.xml
+index 62131e6..92cf0ba 100644
+--- a/res/values/public.xml
++++ b/res/values/public.xml
+@@ -608,4 +608,8 @@
+     <public type="id" name="MC_ABOUT" id="0x7f0a00b0" />
+     <public type="id" name="MC_HELP" id="0x7f0a00b1" />
+     <public type="id" name="MC_EXIT" id="0x7f0a00b2" />
++
++    <!-- added menu items start -->
++    <public type="id" name="MC_SEND" id="0x7f0a00b3" />
++    <!-- added menu items end -->
+ </resources>
+\ No newline at end of file
+diff --git a/smali/com/opentext/bluefield/R$id.smali b/smali/com/opentext/bluefield/R$id.smali
+index 5bda647..96fbb66 100644
+--- a/smali/com/opentext/bluefield/R$id.smali
++++ b/smali/com/opentext/bluefield/R$id.smali
+@@ -127,6 +127,12 @@
+ 
+ .field public static final MC_UPLOAD_FILE:I = 0x7f0a00a5
+ 
++### added menu items start
++
++.field public static final MC_SEND:I = 0x7f0a00b3
++
++### added menu items end
++
+ .field public static final TableLayout01:I = 0x7f0a000e
+ 
+ .field public static final TableRow01:I = 0x7f0a000f
+diff --git a/smali/com/opentext/bluefield/ui/PostMessageScreen.smali b/smali/com/opentext/bluefield/ui/PostMessageScreen.smali
+index 14b31fa..68db94d 100644
+--- a/smali/com/opentext/bluefield/ui/PostMessageScreen.smali
++++ b/smali/com/opentext/bluefield/ui/PostMessageScreen.smali
+@@ -181,6 +181,18 @@
+     return-void
+ .end method
+ 
++.method public onCreateOptionsMenu(Landroid/view/Menu;)Z
++    .locals 1
++    .param p1, "menu"    # Landroid/view/Menu;
++
++    .prologue
++    invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
++
++    const/4 v0, 0x1
++
++    return v0
++.end method
++
+ .method static synthetic access$002(Lcom/opentext/bluefield/ui/PostMessageScreen;Z)Z
+     .locals 0
+     .param p0, "x0"    # Lcom/opentext/bluefield/ui/PostMessageScreen;
+@@ -3274,7 +3286,7 @@
+     .line 868
+     iget-object v0, p0, Lcom/opentext/bluefield/ui/PostMessageScreen;->_send_btn:Landroid/widget/Button;
+ 
+-    const/4 v1, 0x0
++    const/16 v1, 0x8
+ 
+     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
+ 
+@@ -3308,6 +3320,10 @@
+ 
+     invoke-static {p1, v0}, Lcom/opentext/bluefield/ui/GUIElements;->show(Landroid/view/Menu;I)V
+ 
++    const v0, 0x7f0a00b3
++
++    invoke-static {p1, v0}, Lcom/opentext/bluefield/ui/GUIElements;->show(Landroid/view/Menu;I)V
++
+     .line 1017
+     return-void
+ .end method
+@@ -3950,7 +3966,7 @@
+ 
+     .prologue
+     .line 1022
+-    packed-switch p1, :pswitch_data_0
++    sparse-switch p1, :sswitch_data_0
+ 
+     .line 1026
+     invoke-super {p0, p1, p2}, Lcom/opentext/bluefield/ui/GenericActivity;->processMenu(ILandroid/view/ContextMenu$ContextMenuInfo;)Z
+@@ -3961,20 +3977,55 @@
+     return v0
+ 
+     .line 1024
+-    :pswitch_0
++    :sswitch_0
+     invoke-direct {p0}, Lcom/opentext/bluefield/ui/PostMessageScreen;->showAttachmentLookup()V
+ 
+     const/4 v0, 0x1
+ 
+     goto :goto_0
+ 
++    :sswitch_1 # MC_SEND
++    invoke-direct {p0}, Lcom/opentext/bluefield/ui/PostMessageScreen;->canSend()Z
++
++    move-result v0
++
++    if-eqz v0, :cond_0
++
++    invoke-direct {p0}, Lcom/opentext/bluefield/ui/PostMessageScreen;->doSend()V
++
++    invoke-virtual {p0}, Lcom/opentext/bluefield/ui/PostMessageScreen;->onClose()V
++
++    const/4 v0, 0x1
++
++    goto :goto_0
++
++    :cond_0
++    invoke-virtual {p0}, Lcom/opentext/bluefield/ui/BasicActivity;->getApplicationContext()Landroid/content/Context;
++
++    move-result-object v1
++
++    const-string v2, "You need to have at least one recipient!"
++
++    const/4 v3, 0x0
++
++    invoke-static {v1, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
++
++    move-result-object v1
++
++    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
++
++    const/4 v0, 0x1
++
++    goto :goto_0
++
+     .line 1022
+     nop
+ 
+-    :pswitch_data_0
+-    .packed-switch 0x7f0a00a1
+-        :pswitch_0
+-    .end packed-switch
++    :sswitch_data_0
++    .sparse-switch
++        0x7f0a00a1 -> :sswitch_0
++        0x7f0a00b3 -> :sswitch_1
++    .end sparse-switch
+ .end method
+ 
+ .method refresh(Z)V

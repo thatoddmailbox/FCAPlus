@@ -1,0 +1,1 @@
+Move the send button for messages to the action bar

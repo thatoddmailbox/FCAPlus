@@ -273,7 +273,9 @@ action = "build"
 if len(sys.argv) > 1:
 	action = sys.argv[1]
 else:
-	print("No action specified, assuming 'build'.")
+	print("No action specified!")
+	help()
+	sys.exit(1)
 
 if action == "build":
 	build()

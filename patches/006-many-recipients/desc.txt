@@ -1,0 +1,1 @@
+Fix bug with displaying emails with many recipients

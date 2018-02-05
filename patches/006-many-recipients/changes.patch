@@ -1,0 +1,75 @@
+diff --git a/res/layout/message.xml b/res/layout/message.xml
+index db7adca..16065a2 100644
+--- a/res/layout/message.xml
++++ b/res/layout/message.xml
+@@ -1,36 +1,40 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
++<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="5"
+   xmlns:android="http://schemas.android.com/apk/res/android">
+-    <LinearLayout android:orientation="horizontal" android:background="@drawable/graybkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+-        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+-            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+-                <TextView android:text="@string/LABEL_FROM" android:layout_centerVertical="true" style="@style/messageLabels" />
+-                <TextView android:layout_marginRight="4.0dip" android:text=":" android:layout_centerVertical="true" style="@style/messageLabels" />
+-                <TextView android:id="@id/infoFrom" style="@style/messageInfo" />
++    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
++        <ScrollView android:orientation="horizontal" android:background="@drawable/graybkg"  android:layout_width="fill_parent" android:layout_height="fill_parent">
++            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
++                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
++                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
++                        <TextView android:text="@string/LABEL_FROM" android:layout_centerVertical="true" style="@style/messageLabels" />
++                        <TextView android:layout_marginRight="4.0dip" android:text=":" android:layout_centerVertical="true" style="@style/messageLabels" />
++                        <TextView android:id="@id/infoFrom" style="@style/messageInfo" />
++                    </LinearLayout>
++                    <LinearLayout android:orientation="horizontal" android:id="@id/toRow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
++                        <TextView android:text="@string/LABEL_TO" android:layout_centerVertical="true" style="@style/messageLabels" />
++                        <TextView android:layout_marginRight="4.0dip" android:text=":" android:layout_centerVertical="true" style="@style/messageLabels" />
++                        <TextView android:id="@id/infoTo" style="@style/messageInfo" />
++                    </LinearLayout>
++                    <LinearLayout android:orientation="horizontal" android:id="@id/ccRow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
++                        <TextView android:text="@string/LABEL_CC" android:layout_centerVertical="true" style="@style/messageLabels" />
++                        <TextView android:layout_marginRight="4.0dip" android:text=":" android:layout_centerVertical="true" style="@style/messageLabels" />
++                        <TextView android:id="@id/infoCC" style="@style/messageInfo" />
++                    </LinearLayout>
++                    <LinearLayout android:orientation="horizontal" android:id="@id/bccRow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
++                        <TextView android:text="@string/LABEL_BCC" android:layout_centerVertical="true" style="@style/messageLabels" />
++                        <TextView android:layout_marginRight="4.0dip" android:text=":" android:layout_centerVertical="true" style="@style/messageLabels" />
++                        <TextView android:id="@id/infoBCC" style="@style/messageInfo" />
++                    </LinearLayout>
++                    <TextView android:textSize="6.0pt" android:id="@id/messageDate" style="@style/messageInfo" />
++                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
++                        <TextView android:textStyle="bold" android:id="@id/messageSubject" android:text="@string/LABEL_SUBJECT" style="@style/messageInfo" />
++                    </LinearLayout>
++                </LinearLayout>
++                <ImageButton android:layout_gravity="bottom" android:id="@id/buttonAttachments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/attachmentsbtn" style="?android:attr/buttonStyleSmall" />
+             </LinearLayout>
+-            <LinearLayout android:orientation="horizontal" android:id="@id/toRow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+-                <TextView android:text="@string/LABEL_TO" android:layout_centerVertical="true" style="@style/messageLabels" />
+-                <TextView android:layout_marginRight="4.0dip" android:text=":" android:layout_centerVertical="true" style="@style/messageLabels" />
+-                <TextView android:id="@id/infoTo" style="@style/messageInfo" />
+-            </LinearLayout>
+-            <LinearLayout android:orientation="horizontal" android:id="@id/ccRow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+-                <TextView android:text="@string/LABEL_CC" android:layout_centerVertical="true" style="@style/messageLabels" />
+-                <TextView android:layout_marginRight="4.0dip" android:text=":" android:layout_centerVertical="true" style="@style/messageLabels" />
+-                <TextView android:id="@id/infoCC" style="@style/messageInfo" />
+-            </LinearLayout>
+-            <LinearLayout android:orientation="horizontal" android:id="@id/bccRow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+-                <TextView android:text="@string/LABEL_BCC" android:layout_centerVertical="true" style="@style/messageLabels" />
+-                <TextView android:layout_marginRight="4.0dip" android:text=":" android:layout_centerVertical="true" style="@style/messageLabels" />
+-                <TextView android:id="@id/infoBCC" style="@style/messageInfo" />
+-            </LinearLayout>
+-            <TextView android:textSize="6.0pt" android:id="@id/messageDate" style="@style/messageInfo" />
+-            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+-                <TextView android:textStyle="bold" android:id="@id/messageSubject" android:text="@string/LABEL_SUBJECT" style="@style/messageInfo" />
+-            </LinearLayout>
+-        </LinearLayout>
+-        <ImageButton android:layout_gravity="bottom" android:id="@id/buttonAttachments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/attachmentsbtn" style="?android:attr/buttonStyleSmall" />
++        </ScrollView>
+     </LinearLayout>
+-    <LinearLayout android:background="@drawable/whitebkg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip">
++    <LinearLayout android:background="@drawable/whitebkg" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_marginTop="4.0dip" android:layout_weight="4">
+         <WebView android:textColor="@color/dark_gray" android:autoLink="all" android:id="@id/messageBody" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TEXT_LOADING" />
+     </LinearLayout>
+ </LinearLayout>
+\ No newline at end of file

@@ -1,0 +1,39 @@
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index 22b9ff8..64dc976 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.opentext.bluefield">
+-    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/APPLICATION_NAME" android:name="Bluefield">
++    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/APPLICATION_NAME" android:name="Bluefield" android:theme="@android:style/Theme.Material.Light">
+         <activity android:name=".ui.LoginScreen">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"/>
+diff --git a/res/values/styles.xml b/res/values/styles.xml
+index e470fe9..95b6e46 100644
+--- a/res/values/styles.xml
++++ b/res/values/styles.xml
+@@ -2,20 +2,20 @@
+ <resources>
+     <style name="messageTitle">
+         <item name="android:textSize">9.0pt</item>
+-        <item name="android:textColor">#ffffffff</item>
++        <item name="android:textColor">#ff000000</item>
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+     </style>
+     <style name="messageTitleSmall">
+         <item name="android:textSize">7.0pt</item>
+-        <item name="android:textColor">#ffffffff</item>
++        <item name="android:textColor">#ff000000</item>
+         <item name="android:layout_width">fill_parent</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:maxLines">2</item>
+     </style>
+     <style name="messageUnread">
+         <item name="android:textSize">8.0pt</item>
+-        <item name="android:textColor">#ff888888</item>
++        <item name="android:textColor">#ffff0000</item>
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+     </style>

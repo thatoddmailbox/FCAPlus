@@ -1,0 +1,12 @@
+diff --git a/res/menu/menu_options.xml b/res/menu/menu_options.xml
+index 85a0ea2..1fb016e 100644
+--- a/res/menu/menu_options.xml
++++ b/res/menu/menu_options.xml
+@@ -46,5 +46,6 @@
+         <item android:icon="@drawable/ic_menu_about" android:id="@id/MC_ABOUT" android:title="@string/MENU_ABOUT" />
+     </group>
+     <item android:icon="@android:drawable/ic_menu_help" android:id="@id/MC_HELP" android:title="@string/MENU_HELP" />
++    <item android:icon="@android:drawable/ic_menu_manage" android:id="@id/MC_DEBUG" android:title="@string/MENU_DEBUG" />
+     <item android:icon="@drawable/ic_menu_exit" android:id="@id/MC_EXIT" android:title="@string/MENU_EXIT" />
+ </menu>
+\ No newline at end of file

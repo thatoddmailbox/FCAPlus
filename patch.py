@@ -130,7 +130,7 @@ def build():
 	print("Copying extracted APK to working folder...")
 	distutils.dir_util.copy_tree(orig_path, work_path)
 
-	# create a git repo to keep track the patches
+	# create a git repo to keep track of the patches
 	rc = run_command([ "git", "-C", work_path, "init" ])
 	if rc != 0:
 		print("git gave return code %d, stopping!" % rc)

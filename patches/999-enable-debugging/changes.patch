@@ -1,0 +1,25 @@
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index 64dc976..aca0bf8 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.opentext.bluefield">
+-    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/APPLICATION_NAME" android:name="Bluefield" android:theme="@android:style/Theme.Material.Light">
++    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/APPLICATION_NAME" android:name="Bluefield" android:theme="@android:style/Theme.Material.Light">
+         <activity android:name=".ui.LoginScreen">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"/>
+diff --git a/smali/com/opentext/bluefield/ui/BasicActivity.smali b/smali/com/opentext/bluefield/ui/BasicActivity.smali
+index 5e6066b..368ce96 100644
+--- a/smali/com/opentext/bluefield/ui/BasicActivity.smali
++++ b/smali/com/opentext/bluefield/ui/BasicActivity.smali
+@@ -870,6 +870,9 @@
+     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+ 
+     .prologue
++
++    invoke-static {}, Landroid/os/Debug;->waitForDebugger()V
++
+     .line 62
+     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+ 

@@ -109,7 +109,7 @@ def prebuild():
 			print("keytool gave return code %d, stopping!" % rc)
 			sys.exit(1)
 
-def build():
+def build(enable_debugging):
 	prebuild()
 
 	# found a valid apk, first clean up existing app data folders
@@ -154,6 +154,10 @@ def build():
 	# actually apply the patches
 	for patch_folder_name in os.listdir(patches_path):
 		if patch_folder_name == ".DS_Store":
+			continue
+
+		if patch_folder_name == "999-enable-debugging" and not enable_debugging:
+			# special exception: skip debug patch unless it's explicitly opted into
 			continue
 
 		patch_path = os.path.join(patches_path, patch_folder_name)
@@ -262,24 +266,31 @@ def create_patch():
 		sys.exit(1)
 
 def help():
-	print("Usage: python patch.py [action], where action is one of:")
+	print("Usage: python patch.py <action> [debug], where <action> is one of:")
+	print("")
 	print("* build - Build a patched FirstClass APK")
 	print("* build_test - Build a patched FirstClass APK based on the current contents of the working directory")
 	print("* create_patch - Used to create a patch")
 	print("* install - Build a patched FirstClass APK, and then use ADB to install it on a connected Android device")
 	print("* install_test - Run build_test, and then use ADB to install the created APK on a connected Android device")
+	print("")
+	print("and [debug] is optional, and can be set to either 'true' or 'false'")
 
 action = "build"
+enable_debugging = False
 
 if len(sys.argv) > 1:
 	action = sys.argv[1]
+
+	if len(sys.argv) > 2:
+		enable_debugging = (sys.argv[2].lower() == "true")
 else:
 	print("No action specified!")
 	help()
 	sys.exit(1)
 
 if action == "build":
-	build()
+	build(enable_debugging)
 elif action == "build_test":
 	prebuild()
 	package_and_sign()
@@ -288,7 +299,7 @@ elif action == "create_patch":
 elif action == "help":
 	help()
 elif action == "install":
-	build()
+	build(enable_debugging)
 	install()
 elif action == "install_test":
 	prebuild()

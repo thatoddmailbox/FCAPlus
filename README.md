@@ -8,9 +8,10 @@ You should make sure you have all of the following tools, and that they are loca
 * Android SDK (make sure both the `platform-tools` folder AND one of the `build-tools` subfolders are in your path. Specifically, you need to make sure `adb` and `apksigner` are both in your path)
 * Git
 * [apktool](https://ibotpeaches.github.io/Apktool/)
+* FirstClass Android client (to patch; tested with version 1.5.143.13451)
 
 ### Instructions
-You will need to have a copy of the original FirstClass APK, which you can get from your Android phone. Place that APK in the directory containing `patch.py`, and make sure it's named `com.opentext.bluefield.apk`.
+You will need to have a copy of the original FirstClass APK, which you can get from your Android phone. (I personally use [MyAppSharer](https://play.google.com/store/apps/details?id=com.yschi.MyAppSharer) to do this) Place that APK in the directory containing `patch.py`, and make sure it's named `com.opentext.bluefield.apk`.
 
 Once you've done that, connect your phone to your computer and run `python patch.py install`. All of the patches in the `patches/` folder will automatically be applied to the APK, and the newly-created APK will then be installed on your phone.
 

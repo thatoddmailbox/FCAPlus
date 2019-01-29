@@ -82,7 +82,7 @@ def prebuild():
 		sys.exit(1)
 
 	if not command_exists("apksigner --version"):
-		print("Couldn't find adb. Make sure you have the Android SDK installed and one of its build-tools directories located in your PATH.")
+		print("Couldn't find apksigner. Make sure you have the Android SDK installed and one of its build-tools directories located in your PATH.")
 		sys.exit(1)
 
 	if not command_exists("keytool -help"):

@@ -152,7 +152,7 @@ def build(enable_debugging):
 			sys.exit(1)
 
 	# actually apply the patches
-	for patch_folder_name in os.listdir(patches_path):
+	for patch_folder_name in sorted(os.listdir(patches_path)):
 		if patch_folder_name == ".DS_Store":
 			continue
 

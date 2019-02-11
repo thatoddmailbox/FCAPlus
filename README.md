@@ -11,7 +11,9 @@ You should make sure you have all of the following tools, and that they are loca
 * FirstClass Android client (to patch; tested with version 1.5.143.13451)
 
 ### Instructions
-You will need to have a copy of the original FirstClass APK, which you can get from your Android phone. (I personally use [MyAppSharer](https://play.google.com/store/apps/details?id=com.yschi.MyAppSharer) to do this) Place that APK in the directory containing `patch.py`, and make sure it's named `com.opentext.bluefield.apk`.
+You will need to have a copy of the original FirstClass APK, ~~which you can get from your Android phone. (I personally use [MyAppSharer](https://play.google.com/store/apps/details?id=com.yschi.MyAppSharer) to do this)~~ **update:** It looks like FirstClass has been removed from the Play Store. You can still download the app from APK mirror sites like [APKPure](https://apkpure.com/firstclass-mobile/com.opentext.bluefield). (the FCAPlus script will automatically verify the hash of the APK, so you shouldn't have to worry about a fake/malicious download)
+
+However you get it, you should place that APK in the directory containing `patch.py`, and make sure it's named `com.opentext.bluefield.apk`.
 
 Once you've done that, connect your phone to your computer and run `python patch.py install`. All of the patches in the `patches/` folder will automatically be applied to the APK, and the newly-created APK will then be installed on your phone.
 
